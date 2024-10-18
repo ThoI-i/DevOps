@@ -1,0 +1,77 @@
+@import url(../../common.css);
+
+.container {
+  width: 90%;
+  border: 3px double #123456;
+  color: #333;
+  margin: 20px auto;
+}
+.container .main-title {
+  background: rgb(195, 195, 195);
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: '궁서체', cursive;
+  text-align: center;
+  padding: 20px 0;
+}
+.container .sub-title {
+  font-size: 1.2rem;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #ccc;
+}
+.container .sub-title .yellow{
+  font-size: 1.1em;
+  color: yellow;
+}
+.container .gallery{
+  background: #6a6a6a;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+}
+
+.container .gallery li {
+  background: #fff;
+  /* border: 2px solid red; */
+  width: 24%; /*margin을 위해 공백 남김*/
+  height: 21rem;
+  padding: 5px;
+}
+
+.container .gallery li .img-box {
+/* background: aqua; */
+height: 45%;
+border: 1px solid #000;
+overflow: hidden;
+}
+
+.container .gallery li .img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .gallery li p {
+  /* background: violet; */
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 15px;
+  padding: 5px;
+  line-height: 1.3;
+  text-align: justify;
+}
+
+.container .gallery .flower1 {
+  background: #d31515;
+}
+.container .gallery .flower2 {
+  background: #e941f9;
+}
+.container .gallery .flower3 {
+  background: #fe692b;
+}
+.container .gallery .flower4 {
+  background: #f3ea33;
+}

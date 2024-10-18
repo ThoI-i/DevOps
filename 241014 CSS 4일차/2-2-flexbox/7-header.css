@@ -1,0 +1,55 @@
+@import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css");
+
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  background: #777;
+  display: flex; /*1. 가로 배치를 위해: 부모 요소에 flex*/
+  height: 110px;
+  color: #fff;
+}
+
+header .logo {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: green;
+}
+
+header .logo img {
+  width: 70%;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .gnb {
+  width: 45%;
+}
+
+header .gnb li{
+  margin-right: 60px;
+}
+
+header nav ul { /*gnb snb 둘다 적용*/
+  display: flex;
+  /* nav가 컨테이너 ul이 item */
+}
+
+header .snb {
+  width: 30%;
+}
+
+header .snb li{
+  margin-right: 25px;
+}

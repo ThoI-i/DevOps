@@ -1,0 +1,39 @@
+@import url(../../common.css);
+
+section.container {
+  background: pink; /*영역 칠해서 확인함*/
+  width: 60%g;
+  margin: 50px auto;
+  padding: 20px;
+  border: 4px solid tomato;
+}
+.container .main-title { 
+  font-size: 1.5rem; /*다른 점1*/
+  font-weight: 700; /*다른 점2*/
+  text-align: center;/*다른 점3*/
+  margin-bottom: 20px; /*다른 점4*/
+}
+.container .bottom { /*다른 점5*/
+  /* border: 3px solid red; */
+  display: flex;
+  justify-content: space-between; /*다른 점10*/
+}
+.container .bottom article{ /*다른 점6*/
+  /* border: 3px solid greenyellow; */
+  margin: 3px;
+  width: 47%; /*다른 점9*/
+}
+
+.container .bottom .green-tea { /*다른 점7*/
+  background: #dda;
+}
+.container .bottom .coffee { /*다른 점8*/
+  background: #ba7;
+}
+
+.container .bottom article p{ /*다른 점 11*/
+  padding: 15px;
+  text-align: justify;
+  line-height: 1.4;
+  text-indent: 7px;
+}

@@ -1,0 +1,69 @@
+@import url(../../common.css);
+
+.container {
+  width: 90%;
+  border: 3px double #123456;
+  color: #333;
+  margin: 20px auto;
+}
+.container .main-title {
+  background: rgb(195, 195, 195);
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: '궁서체', cursive;
+  text-align: center;
+  padding: 20px 0;
+}
+.container .sub-title {
+  font-size: 1.2rem;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 2px solid #ccc;
+}
+.container .sub-title .yellow {
+  font-size: 1.1em;
+  color: yellow;
+}
+.container .gallery {
+  background: gray;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+ 
+}
+.container .gallery li {
+  width: 24%;
+  height: 25rem;
+  padding: 10px;
+}
+.container .gallery li .img-box{
+  height: 50%;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+}
+.container .gallery li .img-box img{
+  width: 100%;
+  height: 100%;
+}
+.container .gallery li p{
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 10px;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+.container .gallery .flower1 {
+  background: red;
+}
+.container .gallery .flower2 {
+  background: violet;
+}
+.container .gallery .flower3 {
+  background: skyblue;
+}
+.container .gallery .flower4 {
+  background: pink;
+}
