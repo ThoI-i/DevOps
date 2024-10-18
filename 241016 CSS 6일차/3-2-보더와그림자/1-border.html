@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>보더와 그림자</title>
+  <style>
+    .box {
+      width: 300px;
+      height: 300px;
+      border: 8px outset orange;
+      margin: 50px auto;
+      border-radius: 20px 20px 50% 0;
+      /*          x, y, blur, color */
+      box-shadow: 
+      10px 10px 15px tomato
+      , -10px -10px 15px yellowgreen   
+      ;
+
+      background: url('../img/contact.jpg') center/cover;
+      color: #fff;
+      font-size: 40px;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;  
+      align-items: center;
+
+      text-shadow: 3px 3px 5px #111;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    안녕안뇽~~
+  </div>
+</body>
+</html>

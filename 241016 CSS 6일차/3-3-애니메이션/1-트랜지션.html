@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>트랜지션</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background: red;
+      margin: 50px;
+
+      /* transition-property: background, width ;
+      transition-duration: 3s, 1s;
+      transition-delay: 1s;
+      transition-timing-function: steps(100); */
+      
+      /* 단축 속성 */
+      transition: all 1s 0.5s steps(4);
+      /* 시간 / 지연 시간 */
+    }
+    .box:hover {
+      width: 300px;
+      background: greenyellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

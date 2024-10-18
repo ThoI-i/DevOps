@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Webpage</title> <!--1-1. 페이지명 변경 -->
+  <!--1-2. 파비콘(favicon) 추가-->
+  <link rel="icon" href="../../../img/favicon.ico">
+  <!--1-3. css 링크 연결 -->
+  <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+  <!-- 1.4. <header><main><footer> .warp으로 감싸기 -->
+  <!-- 사파리 모바일 구버전 body가 실종되어 적용되지 않는 문제 발생 → 이후 body를 신뢰하지 않아 한번 더 감쌈 -->
+  <div class="wrap">
+    <!-- 1-5. 메인 로고 만들기 -->
+    <header>
+      <h1 class="logo">
+        <a href="index.html">
+          <!-- 1-6.로고 이미지 넣기 -->
+          <img src="../../../img/logo.png" alt="">
+        </a>
+      </h1>
+      <h2 class="intro">welcome</h2>
+      <!--1.6. 메뉴 / 메뉴 아이콘 만들기 -->
+      <a href="#" class="menu-open">
+        <span class="menu-text">MENU</span>
+        <span class="bar-icon"><i class="fas fa-bars"></i></span>
+      </a>
+
+      <nav class="gnb">
+        <!-- 1.7. X 아이콘 만들기 -->
+        <a href="#" class="close"><i class="fas fa-times"></i></a>
+        <ul>
+          <!--1.8. 우측 메뉴 만들기-->
+          <li><a href="#"></a>Home</li>
+          <li><a href="#"></a>About</li>
+          <li><a href="#"></a>Work</li>
+          <li><a href="#"></a>Contact</li>
+          <li><a href="#"></a>News</li>
+          <li><a href="#"></a>Favorite</li>
+        </ul>
+      </nav>
+
+    </header>
+    <main>
+      <section class="visual">
+        <div class="txt">
+          <p>Creative design with Hong Studio</p>
+          <h3>Website & APP, <br>Responsive Web and <br>Brand Identity </h3>
+          <a href="#">See the work <span class="lnr lnr-chevron-right"></a>
+        </div>
+      </section>
+
+    </main>
+    <footer></footer>
+  </div>
+  <script>
+    //버튼의 요소 노드 취득
+    const menuBtn = document.querySelector('header .menu-open');
+    const closeBtn = document.querySelector('.gnb .close');
+
+    const gnb = document.querySelector('.gnb');
+
+    //클릭 이벤트 생성
+    menuBtn.addEventListener('click', () => {
+      gnb.classList.add('on');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      gnb.classList.remove('on');
+    });
+  </script>
+</body>
+
+</html>
