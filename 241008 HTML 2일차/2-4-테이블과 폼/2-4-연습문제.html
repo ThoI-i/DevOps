@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      td, th {
+        border: 1px solid gray;
+        text-align: center;
+        padding: 7px;
+      }
+  
+      th {
+        background-color: lightgray;
+      }
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- 연습 문제1. 테이블 만들기 -->
+    <h1>쇼핑 목록</h1>
+    
+    <table>
+      <tbody> <!--★ tbody 잊지 말 것-->
+        <th>제목</th> 
+        <th>이름</th>
+        <th>가격</th>
+        <tr>
+          <td>모자</td>
+          <td>나이키</td>
+          <td>30,000원</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    
+    <!-- 연습 문제2. 회원 가입 폼 만들기-->
+    <!-- 연습 문제3. 폼에 텍스트 영역 추가하기-->
+    <h1>회원 가입</h1>
+
+    <form action="/submit-form" method="POST">
+      <label>사용자 이름: <input type="text"></label> <!--★ label>input/table과 묶기-->
+      <label>이메일: <input type="text"></label>
+      <label>비밀번호: <input type="password"></label>
+      <label><textarea rows="5" cols="20" placeholder="자기소개(필요 시)"></textarea></label>
+    </form>
+    <button type="button">회원 가입</button>
+    <hr>
+
+    <!-- 연습 문제4. HTML5 폼 적용하기-->
+    <h1>연락처 정보</h1>
+    <form>
+        <label for="phone">전화번호:</label>
+        <input type="tel" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"><br><br>
+        <small>형식: 123-456-7890</small><br><br>
+  
+        <button type="submit">제출</button>
+    </form>
+  
+  </body>
+</html>

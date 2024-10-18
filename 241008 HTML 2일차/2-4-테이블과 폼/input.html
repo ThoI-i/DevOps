@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <form action="">
+    <input type="text" placeholder="이름을 입력하세요." disabled> <!--비활성화-->
+    <br>
+    <input type="password"> <!--패스워드 Type-->
+    <br>
+    <input type="email" value="abc">
+    <br>
+
+    취미:
+    <label>
+      <input type="checkbox" name="hobby"> 운동
+    </label>
+    <label>
+      <input type="checkbox" name="hobby" chek> 명상
+    </label>
+    
+      <input id="breathe" type="checkbox" name="hobby">
+      <br>
+
+      약관 동의:
+      <label><input type="radio" name="agree" checked> 예</label>
+      <label><input type="radio" name="agree"> 아니오</label>
+      <br>
+
+    <input type="number" value="0" max="5" min="0">
+    <br>
+
+    <input type="range" value="3" max="5" min="0">
+
+    <input type="file" multiple accept="image/*">
+    <!-- mutiple: 여러개 파일 올릴 때 -->
+    <!-- accept="" 올릴 이미지 한정 / 이유: 해커가 백도어 소스 코드 올려서 해킹 -->
+    <br>
+
+    <textarea rows="5" cols="10"></textarea> <!--cols="10" 기준 영문 10글자 한글 7글자-->
+    <br>
+
+    <select>
+      <option>아메리카노</option>
+      <option disabled>카페라테</option>
+      <option selected>카푸치노</option>
+    </select>
+    <br>
+  
+    <button type="button">버튼</button>
+    <!-- type 미입력 시 submit -->
+    <button type="submit">전송</button>
+    <button type="reset">초기화</button>
+    <br>
+    
+    <input type="button" value="잘못된 방법"> <!--</button> 닫는 태그X 다른 기능과 연결이 힘듬 / 안 쓰는걸 권장-->
+
+    <label for="breathe">숨쉬기</label>
+    <br>
+
+  </form>
+
+</body>
+</html>
