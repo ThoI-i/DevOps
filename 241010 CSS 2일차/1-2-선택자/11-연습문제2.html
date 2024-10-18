@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 연습</title>
+    <style>
+        /* 연습 문제 1. */
+        body h1 {
+            color: blue;
+        }
+        .intro {
+            font-size: 18px;
+            color: blue;
+        }
+        #main-header {
+            background-color: gray;
+        }
+        /* 연습 문제 2. */
+        button[type="button"] {
+            background-color: green;
+        }
+        input[type="text"] {
+            color: red;
+        }
+        /* 연습 문제 3. */
+        a:hover {
+            color: orange;
+        }
+        input:focus {
+            background-color: yellow;
+        }
+        /* 연습 문제 4. */
+        .intro { /*10점*/
+            text-decoration: underline;
+        }
+        .content .intro { /*10 + 10 = 20점*/
+            text-decoration: line-through;
+        }
+        /* 연습 문제 5. */
+        section p {
+            background-color: lightgray;
+        }
+        .navigation a {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1>웹 개발 학습</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">홈</a></li>
+                <li><a href="#">소개</a></li>
+                <li><a href="#">서비스</a></li>
+                <li><a href="#">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>CSS 선택자 연습</h2>
+            <p class="intro">이 문서는 다양한 CSS 선택자를 연습하기 위해 만들어졌습니다.</p>
+            <p class="intro">CSS 선택자는 HTML 요소를 선택하여 스타일을 적용하는 데 사용됩니다.</p>
+        </section>
+
+        <section class="content">
+            <h2>속성 선택자와 가상 클래스 선택자</h2>
+            <p>속성 선택자와 가상 클래스 선택자는 요소의 상태나 속성을 기준으로 스타일을 적용할 수 있습니다.</p>
+            <button type="button">클릭하세요</button>
+            <input type="text" placeholder="텍스트 입력">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 웹 개발 학습. 모든 권리 보유.</p>
+    </footer>
+</body>
+</html>

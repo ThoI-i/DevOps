@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>형제 선택자</title>
+  <style>
+
+    /*인접 형제 선택자*/
+    .orange + li { /*li를 변경할껀데 형이 누구냐?*/
+      background: orangered;
+    }
+
+    li + li {
+      font-size: 10px;
+    }
+
+    .red ~ li {
+      background: violet;
+    }
+
+    /* 그룹 선택자 */
+    .apple,
+    section .banana,
+    footer ul#fruit{
+      color: #000;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <ul>
+    <li class="orange">어뤠인지</li>
+    <li>사과</li>
+    <li>딸기</li>
+    <li class="orange">오렌지</li>
+    <li class="red">자몽</li>
+    <li>포도</li>
+    <li>레몬</li>
+  </ul>
+
+</body>
+</html>

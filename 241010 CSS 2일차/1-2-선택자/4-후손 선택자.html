@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>후손 선택자</title>
+    <style>
+      /* 
+        자식, 후손, 형제 선택자
+
+        - 가장 마지막 선택자가 스타일 타겟,
+          그 앞은 전부 조건
+      */
+      
+      div .oran {
+        background: orange;
+      }
+
+      body ul {
+        border: 1px solid #000;
+      }    
+
+      section .low div {
+        font-style: italic;
+        color: violet;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <div class="rotate"><span class="kiwi">키위</span></div>
+    </header>
+
+    <div class="low">
+      <div class="mango">망고망고</div>
+    </div>
+
+    <section id="circle">
+      <h1 class="title">
+        <div class="left low">
+          <div class="mango">망고</div>
+        </div>
+      </h1>
+    </section>
+
+    <!-- div>ul>li*3 -->
+    <div>
+      <ul>
+        <li
+          id="apple"
+          class="red">
+          사과
+        </li>
+        <li>포도</li>
+        <li class="oran">오렌지</li>
+        <li class="red">체리</li>
+      </ul>
+
+      <!-- div+p+span -->
+      <div
+        id="change"
+        class="yellow low primary">
+        당근
+      </div>
+      <p class="red">토마토</p>
+      <span class="oran">오렌지</span>
+    </div>
+  </body>
+</html>

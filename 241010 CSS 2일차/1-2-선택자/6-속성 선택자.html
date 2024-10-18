@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>속성 선택자</title>
+    <style>
+      [type=password] { /* HTML 수정불가 / CSS로만 변경 */
+        color: red;
+      }
+      
+      [type=disabled] {
+        width: 150px;
+        height: 50px;
+      }
+      
+      img[src]{
+        
+      }
+      div.apple #lion[value=1234] {
+
+      }
+    </style>
+    </head>
+  <body>
+
+    <div>
+      <input type="text" value="hello">
+    </div>
+    <div>
+      <input type="password" value="1234">
+    </div>
+    <div>
+      <input type="disabled" value="사용불가">
+    </div>
+
+  </body>
+</html>
