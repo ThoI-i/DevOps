@@ -1,0 +1,141 @@
+@import url('../common.css');
+
+body {
+  background: #aaa;
+  font-size: 18px;
+  font-family: 'NGthic', sans-serif;
+}
+
+#wrapper {
+  /* 여백을 남긴 후 가운데 정렬하는 기법 */
+  background: #fff; 
+  width: 70%;
+  margin: 0 auto;
+}
+#wrapper header {
+  text-align: center;
+}
+#wrapper header h1 {
+  background: #fa0;
+  color: #fff;
+  font-size: 5.2em;
+  font-weight: 700;
+  padding: 10px;
+}
+#wrapper header h1 span {
+  font-size: 1.2rem;
+  display: block;
+}
+#wrapper header .stit {
+  color: #333;
+  background: #ccc;
+  padding: 5px 0;
+}
+
+#wrapper .container {
+  display: flex;
+  background: #fff;
+}
+
+#wrapper .container .side-menu {
+  width: 25%;
+}
+#wrapper .container .side-menu h3 {
+  background: #900;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 700;
+  padding: 10px;
+}
+#wrapper .container .side-menu ul {
+  margin-top: 7px;
+}
+#wrapper .container .side-menu ul li {
+  padding: 10px;
+}
+#wrapper .container .side-menu ul li a {
+  text-decoration: underline;
+  font-weight: 700;
+}
+#wrapper .container .side-menu ul li a:hover {
+  border-bottom: 1px dashed #000;
+}
+
+#wrapper .container .main-content {
+  background: #ccc;
+  width: 50%;
+  color: #123456;
+}
+
+#wrapper .container .main-content .art-piece {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 7px 5px;
+}
+#wrapper .container .main-content .art-piece .title {
+  background: #123456;
+  color: #ddd;
+  padding: 7px 5px;
+}
+#wrapper .container .main-content .art-piece .title a {
+  /* a 태그를 블록화하면 선택 영역이 넓어짐 */
+  display: block;
+}
+#wrapper .container .main-content .art-piece .title a:hover {
+  color: #ee0;
+}
+#wrapper .container .main-content .art-piece .artist {
+  margin: 20px 0;
+}
+#wrapper .container .main-content .art-piece .detail {
+  font-size: 0.7em;
+  font-weight: 400;
+}
+
+#wrapper .container .banner {
+  width: 25%;
+}
+#wrapper .container .banner h3 {
+  font-size: 1.2em;
+  color: #333;
+  padding: 20px 10px;
+}
+#wrapper .container .banner h3 > *
+{
+  /* h3의 모든 자식들을 적용시키겠다 */
+  display: block;
+  margin-bottom: 10px;
+}
+#wrapper .container .banner h3 span {
+  text-decoration: underline;
+}
+#wrapper .container .banner h3 .all {
+  color: #999;
+}
+#wrapper .container .banner h3 .love {
+  color: #fa0;
+}
+#wrapper .container .banner .link {
+  padding: 0 10px;
+}
+#wrapper .container .banner .link li {
+  margin-bottom: 15px;
+}
+#wrapper .container .banner .link li a {
+  text-decoration: underline;
+  display: block;
+  font-weight: 700;
+}
+
+#wrapper footer {
+  background: #123456;
+  color: #eee;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+#wrapper footer a {
+  text-decoration: underline;
+}
