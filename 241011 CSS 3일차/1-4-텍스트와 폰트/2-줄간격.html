@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>줄간격</title>
+    <style>
+      h1 {
+        /* 텍스트 정렬 */
+        text-align: center;
+        /* 선 긋기 */
+        text-decoration: underline;
+        /* 자간 */
+        letter-spacing: 15px;
+      }
+      p {
+        font-size: 20px;
+        /* 1.2 ~ 1.6 추천 */
+        line-height: 1.5;
+        /* 여러줄일 떄 양쪽 정렬 */
+        text-align: justify;
+        /* 첫줄 들여쓰기 */
+        text-indent: 10px;
+        /* 띄어쓰기 간격 */
+        word-spacing: 5px;
+        /* 글자 굵기 */
+        font-weight: normal;
+      }
+      strong {
+        /* 
+          글자 굵기는 100 ~ 900 사이
+          100 단위 숫자를 사용
+          900이 가장 굵음
+          */
+        font-weight: normal;
+      }
+      span {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>안녕하세요</h1>
+    <p>
+      대한민국의 <span>주권</span>은 국민에게 있고, 모든 권력은 국민으로부터 나온다. 국군의
+      <strong>조직</strong>과 편성은 법률로 정한다. 지방의회의
+      조직·권한·의원선거와 지방자치단체의 장의 선임방법 기타 지방자치단체의
+      조직과 운영에 관한 사항은 법률로 정한다. 법률이 헌법에 위반되는 여부가
+      재판의 전제가 된 경우에는 법원은 헌법재판소에 제청하여 그 심판에 의하여
+      재판한다. 모든 국민은 근로의 의무를 진다. 국가는 근로의 의무의 내용과
+      조건을 민주주의원칙에 따라 법률로 정한다.
+    </p>
+  </body>
+</html>

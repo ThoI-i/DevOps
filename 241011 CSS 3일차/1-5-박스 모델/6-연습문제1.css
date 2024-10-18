@@ -1,0 +1,36 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  width: 550px;
+}
+h1, h2, p{
+  margin: 0;
+}
+h1{
+  font-size: 15px;
+  font-weight: 900;
+  padding: 10px 0;
+  letter-spacing: 5px;
+}
+body .section-area{
+  border: 5px double #123456;
+}
+.main-title {
+  text-align: center;
+  background: #abcdef;
+}
+.content {
+  font-size: 10px;
+  padding: 5px;
+  font-weight: 500;
+}
+.main-content{
+  padding-top: 0.5px;
+}
+.top {
+  border-top: 3px solid #123456;
+}
+.bottom {
+  border-bottom: 1px dotted #000;
+}

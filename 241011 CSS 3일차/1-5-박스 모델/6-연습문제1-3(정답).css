@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+}
+
+/* CSS 구성 시 1. 큰 영역부터 먼저 잡는다 */
+section { 
+  width: 550px;
+  margin: 70px auto;
+  border: 4px double #123456;
+}
+
+section .main-title {
+  background: #abcdef; /*색을 칠해서 영역 확인*/
+  margin:0;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 5px solid #123456;
+  letter-spacing: 10px;
+}
+
+section .content {
+  /*2.border을 사용해서 영역을 확인한다.*/
+  /* border: 3px solid #000;  */
+  padding: 10px;
+}
+
+.content + .content{
+  border-top: 3px dotted #000;
+}
+
+section .content .sub-title {
+  margin: 0;
+}
+
+section .content p {
+  margin: 0;
+  margin-top: 10px;
+}
