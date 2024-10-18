@@ -1,0 +1,11 @@
+h1 {
+  font-style: italic; /* FS */
+  color: orange; /* C + TAB */
+  background: aqua;
+}
+
+li {
+  font-size: 30px;
+  text-decoration: underline;
+}
+

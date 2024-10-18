@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    .or { /*.or : class = or인 CSS를 적용*/
+      color: orange;
+    }
+
+    .big {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .highlight {
+      text-shadow: 2px 2px 5px yellow;
+    }
+
+    .tom {
+      background: tomato;
+    }
+
+    #grape {
+      color: violet;
+      background: pink;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <!-- div>ul>li*3-->
+  <div>
+    <ul>
+      <li class="highlight">사과</li>
+      <li id="grape" class="big">포도</li>
+      <li class="or">오렌지</li>
+    </ul>
+  </div>
+
+  <!-- div+p+span 나른히 생성하기-->
+  <div>당근</div>
+  <p class="big highlight tom">토마토</p>
+  <span class="or big">오렌지</span>
+
+</body>
+</html>
