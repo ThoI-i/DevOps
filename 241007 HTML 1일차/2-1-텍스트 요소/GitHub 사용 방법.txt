@@ -1,0 +1,5 @@
+[GitHub 사용방법]
+git config --global user.name "Theo"
+git config --global user.email "ojw1912@gmail.com"
+
+git remote add origin https://github.com/ThoI-i/DevOps.git
