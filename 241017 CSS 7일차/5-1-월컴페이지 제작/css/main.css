@@ -1,0 +1,519 @@
+@import url(../../../common.css);
+/* Noto Sans KR */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* 모바일 환경에서만 줄바꿈 적용 */
+br.mo {
+  display: none;
+
+}
+
+.warp{
+  font-size: 17px; /*전체 폰트 사이즈*/
+  font-family: "Noto Sans KR", sans-serif; /*폰트는 상속됨*/
+  /* color: #fff; */
+}
+
+/* header*/
+/* 1. 사용할 요소 만들기(header{}, header .logo{}.....*/
+/* 2. border, background 만들어서 범위 확인하기*/
+/* ========================================================= */
+header {
+  /* background: red; */
+  /* 3. 메뉴 고정 / 위치 이동 */
+  position: fixed;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  padding: 20px 50px;
+
+  display: flex;
+  align-items: center; /*5.2.중앙 정렬*/
+
+  z-index: 100;
+ }
+/* 4. header 3형제 진행 */
+header .logo {
+  /* border: 3px solid blue; */
+  flex: 1; /*비율을 나타냄*/
+}
+
+/* 5.1 로고 이미지 조정 */
+header .logo img {
+  height: 60px;
+}
+
+header .intro{
+  /* border: 3px solid orange; */
+  /* 5-3. 로고 아이콘과 welcome 요소간 간격 벌리기*/
+  margin-left: 30px;
+  flex: 4;
+}
+
+header .menu-open{
+  /* 5.4 메뉴 아이콘, 글꼴 사이즈 수정 */
+  /* border: 3px solid green; */
+  flex: 1;
+  display: flex;
+  align-items: center; /*5.5-1. 메뉴 텍스트 가운데 정렬*/
+  justify-content: flex-end; /*5.5-2. 메뉴 텍스트/아이콘 우측 정렬*/
+}
+header .menu-open .menu-text {
+  font-size: 20px;
+  margin-right: 15px;
+}
+header .menu-open .bar-icon {
+  font-size: 33px;
+}
+
+
+header .gnb {
+  /* border: 4px solid violet; */
+  background: #000;
+  height: 100vh;
+  font-size: 40px;
+  color: #666;
+
+  position: fixed;
+  right: -100%; /*해당 영역만 화면 오른쪽으로 밀기*/
+  top: 0;
+  padding: 70px 100px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  
+  transition: 0.6s;
+}
+header .gnb.on{
+  right: 0;
+}
+
+header .gnb .close {
+  /* background: red; */
+  /* order:3 */
+  display: block;
+  color: #fff;
+}
+
+header .gnb ul {
+  /* background: blue; */
+  /* order:2 */
+  margin-right: 200px;
+}
+header .gnb ul li {
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+header .gnb ul:hover {
+  color: #fff;
+}
+/*END header style */
+/* ========================================================= */
+
+/* section visual */
+/* ========================================================= */
+section.visual {
+  background: url(../../../../img/visual1.jpg)
+  no-repeat center/cover;
+  height: 100vh;
+  
+  display: flex;
+  align-items: center;
+}
+
+section.visual .txt {
+  /* background: greenyellow; */
+  margin-left: 10%;
+  color: #fff;
+  text-shadow: 3px 5px 5px #000;
+  font-size: 18px;
+  z-index: 100;
+}
+
+section.visual .txt h3 {
+  margin: 30px 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* 가상의 복제태그 */
+section.visual::after {
+  /* 필수속성 */
+  content: '';
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+ section.content {
+  background: #1b1b1b;
+  color: #fff;
+  padding: 120px 0;
+}
+
+  section.content .main-text {
+    /* background: orange; */
+    /* 1-1. 패딩으로 여백 생성 */
+    /* padding: 0 50px; */
+    /* 1-2. 마진으로 여백 생성 */
+    width: 80%;
+    margin: 0 auto 100px;
+    font-size: 27px;
+
+    display: flex;
+    /* 3. absolute는 가까운 부모 position 기준으로 적용됨 */
+    position: relative;
+    /* 2-1. 마진 효과 내기 : space-between 쓰기 */
+    /* justify-content: space-between; */
+  }
+/* before, after는 아무 태그에 사용 가능 */
+section.content .main-text::before {
+  /* 필수 속성 */
+  content: '';  /*복제할 내용(text)*/
+  width: 100px;
+  height: 100px;
+  background: #ffec03;
+  border-radius: 50%;
+
+  position: absolute;
+  left: 70px;
+  right: 100px;
+}
+
+section.content .main-text::after {
+  content: '”';
+  font-size: 300px;
+
+  position: absolute;
+  left: 70px;
+  right: 0px;
+}
+
+section.content .main-text h3 {
+    /* border: 4px solid red; */
+    /* 2-2 마진 효과 내기 : flex 비율 선정하기 */
+    flex: 1;
+    font-weight: 700;
+  }
+section.content .main-text p {
+    /* border: 4px solid blue ; */
+    /* 2-2  마진 효과 내기 : flex 비율 선정하기 */
+    flex: 1.5;
+    font-size: 25px;
+    line-height: 1.4;
+  }
+section.content .main-text p span {
+    display: block;
+    margin-top: 30px;
+    color: #999;
+    font-size: 22px;
+  }
+section.content .project {
+    /* background: orange; */
+    margin-top: 200px;
+    margin-bottom: 60px;
+  }
+section.content .project .top {
+    /* border: 4px solid red; */
+    width: 80%;
+    margin: 0 auto 60px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+section.content .project .top h3 {
+    /* background: aqua; */
+    font-size: 38px;
+  }
+section.content .project .top a {
+    /* background: violet; */
+    font-size: 20px;
+  }
+section.content .project .bottom {
+    /* border: 4px solid blue; */
+
+    display: flex;
+    justify-content: space-evenly;
+  }
+section.content .project .bottom li {
+    border: 4px solid #fff;
+    background: greenyellow;
+    width: 24%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+  /* 커튼 효과 0% */
+section.content .project .bottom li a::before {
+  content: '';
+  width: 0%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.7s;
+  /* 작동하기 전 지연시간? */
+}
+  /* 커튼 효과 100% 커서올리면 100% */
+section.content .project .bottom li a:hover::before {
+  width: 100%;
+}
+
+section.content .project .bottom li a img {
+    width: 100%;
+    /* opacity: 0.3; */
+  }
+section.content .project .bottom li a .name {
+  background: #1b1b1b;
+  color: #fff;
+  font-size: 24px;
+  text-align: right;
+  width: 250px;
+  padding: 15px;
+
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  opacity: 0;
+  transition: 1s;
+}
+
+section.content .project .bottom li a:hover .name {
+  animation: show-name 1s both;
+}
+@keyframes show-name {
+  /* 0%, 100% 구간만 있는 경우 */
+  /* from to로 해도 됨 */
+  from {
+    opacity: 0;
+    bottom: -30px;
+  }
+  to {
+    opacity: 1;
+    bottom: 10px;
+  }
+}
+section.content .partners {
+  margin: 170px auto 100px;
+}
+section.content .partners h3 {
+  font-size: 19px;
+  margin-bottom: 80px;
+}
+section.content .partners ul {
+  /* border: 4px solid #fff; */
+  display: flex;
+  flex-wrap: wrap;
+}
+section.content .partners ul li {
+  /* background: orangered; */
+  /* border: 4px solid greenyellow; */
+  width: 25%;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 이미지 호버 시 흰색으로 표시 */
+section.content .partners ul li img {
+  opacity: 0.3;
+  transition: 0.4s;
+}
+/* 이미지 호버 시 흰색으로 표시 */
+section.content .partners ul li img:hover {
+  opacity: 1;
+}
+section.content .contact {
+  background: 
+  url('../../../img/contact.jpg')
+  no-repeat center/cover fixed;
+  width: 90%;
+  padding: 220px 0;
+}
+section.content .contact .inner {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 19px;
+  line-height: 1.4;
+}
+section.content .contact .inner .tel {
+  font-size: 58px;  
+  font-weight: 700;
+  margin: 50px 0;
+}
+
+/* ========================================================= */
+/*END section visual */
+
+/*footer*/
+/* ========================================================= */
+footer {
+  background: #1b1b1b;
+  color: #999;
+  padding: 0 80px 80px;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer ul li:nth-child(2) {
+  color: #eee;
+  font-size: 16px;
+  line-height: 2;
+}
+footer ul li:nth-child(2) span {
+  font-weight: 700;
+  margin-right: 10px;
+  color: #999;
+}
+
+#go-top { 
+  position: fixed;
+  right: 50px;
+  bottom: 60px;
+  color: #fff;
+  font-size: 52px;
+}
+/* ========================================================= */
+/*END footer */
+
+
+
+/* ========================================================= */
+/* 큰 태블릿 반응형 디자인 */
+/* 1024px 이하 */
+/* 1. 100vh -> 50vh로 변경 */
+@media (max-width: 1024px) {
+section.visual {
+    height: 60vh;
+  }
+
+section.visual .txt {
+    z-index: 5;
+  }
+section.visual .txt h3 {
+    font-size: 48px;
+  }
+
+header .gnb {
+    width: 80vw;
+    z-index: 500;
+    padding: 200px 20px;
+    justify-content: center;
+  }
+
+section.content .main-text h3 {
+    margin-right: 100px;
+    font-size: 22px;
+  }
+section.content .main-text p {
+    font-size: 19px;
+  }
+section.content .main-text .project .bottom li {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+section.content .partners h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+section.content .partners ul li {
+    width: 50%;
+  }
+section.content .partners ul li img {
+    opacity: 0.7;
+  }
+}
+/* END 큰 태블릿 반응형 디자인 */
+/* END 1024px 이하 */
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* 작은 휴대폰 디자인 */
+/* 375px 이하 */
+@media (max-width: 375px) { 
+
+  .wrap {
+    width: 100vw;
+  }
+  header {
+    padding: 15px;
+  }
+  header .intro,
+  header .menu-open .menu-txt,
+  section.content .partners,
+  section.content .contact
+  {
+    display: none;
+  }
+  header .logo img {
+    height: 40px;
+  }
+  section.visual .txt {
+    font-size: 14px;
+  }
+  section.visual .txt h3 {
+    font-size: 20px;
+  }
+  section.content {
+    padding: 50px 0;
+  }
+  section.content .main-text {
+    flex-direction: column;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  section.content .main-text h3 {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  section.content .main-text p {
+    text-align: justify;
+  }
+  section.content .main-text::before,
+  section.content .main-text::after {
+    display: none;
+  }
+  section.content .main-text p span {
+    font-size: 15px;
+  }
+  section.content .project {
+    margin-top: 50px;
+  }
+  section.content .project .top {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  section.content .project .top h3 {
+    font-size: 20px;
+  }
+  section.content .project .top h3 br {
+    display: none;
+  }
+  section.content .project .top a {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  section.content .project .bottom {
+    flex-direction: column;
+  }
+  section.content .project .bottom li {
+    width: 90%;
+    height: 250px;
+    margin: 0 auto 20px;
+  }
+}
+/* END 작은 휴대폰 디자인 */
+/* END 375px 이하 */
+/* ========================================================= */

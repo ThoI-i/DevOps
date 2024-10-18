@@ -1,0 +1,96 @@
+@import url(../../../common.css);
+
+/* header */
+/* ======================================= */
+header {}
+header nav ul {
+  /* border: 3px solid red; */
+  
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul li {
+  /* border: 3px solid blue; */
+  margin: 0.5rem;
+}
+/* END header */
+/* ======================================= */
+
+/* main */
+/* ======================================= */
+main {
+  height: 93vh;
+  position: relative;
+  overflow: hidden;
+  }
+main .main-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+main .main-logo {
+  width: 20rem;
+}
+
+main .main-logo img{
+  width: 100%;
+}
+
+main .search-bar {
+  margin: 2rem 0;
+}
+main .search-bar input {
+  width: 19rem;
+  height: 2rem;
+  border-radius: 30px;
+  border: 1px solid lightgray;
+  box-shadow: 
+  2.5px 0 2.5px lightgray,
+  -2.5px 0 2.5px lightgray,
+  0 2.5px 2.5px lightgray,
+  0 -2.5px 2.5px lightgray;
+}
+
+
+main .buttons .button-design {
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 0 25px;
+  line-height: 2.5;
+  letter-spacing: -0.04cap;
+  cursor: pointer;
+}
+
+/* END main */
+/* ======================================= */
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer * a {
+  font-size: 0.8rem;
+  margin: 0 0.3rem;
+}
+
+footer .footer-left {
+}
+
+/* footer */
+/* ======================================= */
+
+footer .footer-right
+
+footer .footer-left {}
+
+
+
+footer .footer-right {}
+/* END footer */
+/* ======================================= */

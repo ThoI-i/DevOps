@@ -1,0 +1,25 @@
+@import url('../../common.css');
+
+body { 
+  display: flex; /*1.1.justfy-content 쓰기 위해서*/
+  flex-direction: column; /*1-2. justfy-content 쓰기 위해서*/
+  height: 100vh;
+  border: 7px dashed orange;
+  justify-content: space-between;
+}
+header {
+  background: red;
+  display: flex;
+  justify-content: flex-end;
+}
+main {
+  background: greenyellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer {
+  background: dodgerblue;
+  display: flex;
+  justify-content: space-between;
+}

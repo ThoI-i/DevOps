@@ -1,0 +1,195 @@
+@import url(../../../common.css);
+
+/* header */
+/* ======================================= */
+header { 
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+header nav {
+  background: #fff;
+  display: flex;
+}
+header nav .logo{
+  flex: 1;
+}
+header nav .logo img {
+  width: 100%;  
+  padding: 20px;
+}
+header nav .search-bar{
+  flex: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .search-bar input {
+  margin-left: 10rem;
+  padding: 0.5rem;
+  width: 55rem;
+  height: 1.8em;
+  background: rgb(233, 232, 232);
+  border: 1px solid gray;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+}
+header nav .nav-icons{
+  flex: 3; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header nav .nav-icons a {
+  margin: 0 0.8rem;
+}
+header nav .nav-icons a img {
+  width: 100%;
+}
+/* END header */
+/* ======================================= */
+
+/* main */
+/* ======================================= */
+
+main {
+  padding-top: 13rem;
+  background: rgb(227, 227, 227);
+  border: 1px solid lightgray;
+}
+
+main .content-container {
+  /* border: 3px solid blue; */
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* left-colum */
+/* ======================================= */
+main .content-container .left-column{
+  width: 70%;
+  margin-bottom: 3rem;
+  border: 1px solid lightgray;
+  }
+main .content-container .left-column .post {
+  background: #fff;
+  /* border: 3px solid purple; */
+}
+
+main .content-container .left-column .post .post-header {
+  /* border: 3px solid pink; */
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.7rem;
+}
+main .content-container .left-column .post .post-header img {
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+main .content-container .left-column .post .post-image {
+  width: 100%; 
+}
+
+main .content-container .left-column .post {
+}
+
+main .content-container .left-column .post .post-actions {
+  padding: 0.5rem;
+}
+
+main .content-container .left-column .post .post-caption {
+  padding: 0.5rem;
+}
+main .content-container .left-column .post .post-caption strong {
+  font-weight: 700;
+}
+
+/* END left-colum */
+/* ======================================= */
+
+/* right-colum */
+/* ======================================= */
+
+main .content-container .right-column {
+  /* background: red; */
+  margin-left: auto;
+  width: 27%;
+}
+
+main .content-container .right-column .profile-info {
+  /* background: yellowgreen; */
+  display: flex;
+  margin-bottom: 2rem;
+}
+main .content-container .right-column .profile-info img{
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+main .content-container .right-column .profile-info strong{
+  font-weight: 700;
+  }
+main .content-container .right-column .profile-info div {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+main .content-container .right-column .suggestions{
+  background: #fff;
+  border: 1px solid lightgray;
+}
+
+main .content-container .right-column .suggestions h4{
+  /* background: yellowgreen; */
+  font-weight: 700;
+  padding: 1rem 0 1rem 0.5rem ;
+}
+
+main .content-container .right-column .suggestions .suggestion {
+  /* background: yellowgreen; */
+  display: flex;
+  padding: 1rem 0.8rem ;
+}
+main .content-container .right-column .suggestions .suggestion img {
+  border-radius: 50%;
+}
+main .content-container .right-column .suggestions .suggestion div {
+  margin: 0 0.5rem;
+}
+main .content-container .right-column .suggestions .suggestion strong {
+  font-weight: 700;
+}
+main .content-container .right-column .suggestions .suggestion button {
+  color: #fff;
+  background: rgb(19, 166, 219);
+  border: none;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  width: 5rem;
+  height: 2rem;
+}
+/* END right-colum */
+/* ======================================= */
+
+/* END main */
+/* ======================================= */
+
+/* footer */
+/* ======================================= */
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 2rem 0 1.5rem 0;
+  color: rgb(51, 23, 209);
+  font-weight: 500;
+
+}
+footer ul li {
+  margin: 0 0.8rem;
+}
+/* END footer */
+/* ======================================= */
