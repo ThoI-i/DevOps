@@ -1,0 +1,13 @@
+    가수명     노래명
+    ============================
+
+    동방신기    HUG
+    F(X)        NU ABO
+    AOA         사뿐사뿐
+    TWICE       CHEER UP
+=======
+    에스파      supernova
+    DAY6        HAPPY
+    르세라핌    CRAZY
+    뉴진스      Super Natural
+
