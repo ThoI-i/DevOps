@@ -1,0 +1,14 @@
+<<<<<<< HEAD
+h1 {
+  background: red;
+=======
+body {
+  background: gray;
+  font-size: 20px;
+  font-family: cursive;
+}
+h1{
+  background: violet;
+  color: orange;
+>>>>>>> parent of 7062cc8 (실험 중)
+}
