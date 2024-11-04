@@ -33,8 +33,14 @@ function calcBMI(cm, kg) {
   3.3897 * 10 =>  33.897  -> round반올림 -> 34 / 10 -> 3.4
 */
 function round(n, postion) {
-  return Math.round(n * 10 ** postion) / 10 ** postion;
+  // return Math.round(n * 10 ** postion) / 10 ** postion;
+  return n.toFixed(postion)
 }
+
+// .toFixed() 예시
+let toFixedTest = 24.55678.toFixed(2);
+console.log(test);
+
 
 
 /*

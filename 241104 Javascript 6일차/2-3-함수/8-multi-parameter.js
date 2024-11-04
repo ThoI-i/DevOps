@@ -66,4 +66,8 @@ function min(...numberList) {
 let result4 = min(9, 76, -90, -1000, 555, 780, -777);
 console.log(result4);
 
-// result4에는 -1000이 저장되어야함
+
+
+
+// function bar (start, end, ...other) {
+// }
