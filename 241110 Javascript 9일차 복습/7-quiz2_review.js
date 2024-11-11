@@ -225,31 +225,61 @@ console.log(`END 6-2 for ~ in을 통해 필요값만 mapping--------------------
 //   이름과 그 거래 횟수를 출력해주세요.**
 const highestTrsAmount = traders.reduce((trsObj7, trs) => {
   const userName = trs.trader.name;
-  if (trsObj7[userName] === undefined) {
-    trsObj7[userName] = count = 1; // 추가 수정 예정
-  } else {
-    trsObj7[userName]++;
-  }
+    trsObj7[userName] = trsObj7[userName] ? trsObj7[userName] + 1 : 1; // 
   return trsObj7;
 },{});
 console.log(highestTrsAmount);
-console.log(`END 7-1 사용자 명과 거래 횟수 추가 ===============`);
+console.log(`END 7-1 사용자 명과 거래 횟수 추가 ==================================`);
 
 let highestName = '';
 let highestCount = 0;   
 for ( const key in highestTrsAmount ) {
-   if ( highestTrsAmount[key] > highestCount )
+   if ( highestTrsAmount[key] > highestCount ) {
     highestName = key;
     highestCount = highestTrsAmount[key];
+  }
 } 
 console.log(`가장 많은 거래자 명: ${highestName} | 거래 수: ${highestCount}`);
+console.log(`END 7-2 가장 많은 거래자 명 / 거래 수 ==================================`);
+// 7-2-1
+const highestCountTrader = traders.reduce((traderObj, trs) => {
+  const traderName = trs.trader.name;
+  traderObj[traderName] = traderObj[traderName] ? traderObj[traderName] + 1 : 1;
+  return traderObj;
+},{});
+console.log(highestCountTrader);
 
 // 8. **모든 거래 중 거래액이 중간값인
 //   거래의 정보(거래자 이름, 도시, 연도, 거래액)를 출력해주세요.**
+const sortedTraders2 = traders.slice().sort((trs1, trs2) => trs1.value - trs2.value); // 값 복사해서 오름차순 정렬
+console.log(sortedTraders2);
+console.log(`END 8-1 값 복사 후 오름차순 정렬=========================================`);
+
+let middleTraderIndex;
+if ( sortedTraders2.length % 2 === 1 ) {
+  middleTraderIndex = sortedTraders2[sortedTraders2.length/2];
+}
+  else if ( sortedTraders2.length % 2 === 0) {
+    const firstValueOdd = sortedTraders2[sortedTraders2.length/2].value;
+    const secondValueEven = sortedTraders2[(sortedTraders2.length/2)-1].value;
+    middleTraderIndex = (firstValueOdd + secondValueEven)/2;
+  }
+console.log(`중간 거래액: ${middleTraderIndex}`);
+console.log(`END 8-2. 중간 거래액=========================================`);
 
 // 9. **각 도시에서 진행된 거래의 수를 계산해주세요.
 //   결과는 `{도시이름: 거래수}` 형태의 객체여야 합니다.**
+const cityCount = traders.reduce((cityObj, trs) => {
+  const cityName = trs.trader.city;
+  cityObj[cityName] = cityObj[cityName] ? cityObj[cityName] + 1 : 1;
+  return cityObj;
+},{});
+console.log(cityCount);
+console.log(`END 9. 도시 명: 총 거래 수=========================================`);
 
 // 10. **거래액을 기준으로 모든 거래를 오름차순으로 정렬한 후,
 //   정렬된 리스트를 출력해주세요.
 //   각 거래 정보는 거래자 이름, 도시, 연도, 거래액을 포함해야 합니다.**
+
+const sortedByValueASC = traders.slice().sort((trs1, trs2) => trs1.value - trs2.value);
+console.log(sortedByValueASC);
