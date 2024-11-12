@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실시간 배경색 변경</title>
+</head>
+<body>
+
+  <input type="text" id="colorInput" placeholder="색상 이름이나 HEX 코드를 입력하세요">
+  <div id="warning" style="color: red; display: none;">유효하지 않은 색상입니다!</div>
+
+  <script>
+
+    const $colorInput = document.getElementById('colorInput');
+    const $warning = document.getElementById('warning');
+
+    $colorInput.addEventListener('input', () => {
+      document.body.style.background = $colorInput.value;
+
+      // 정확한 색상 단어를 입력하지 않으면 background값이 빈문자열("")로 유지 || 정확한 값을 입력하지 않으면 Properties탭에 입력되지 않음
+      if (document.body.style.background !== $colorInput.value) { // F12->[좌측탭]Elements탭-><body>클릭->[우측탭]Properties탭->background
+        $warning.style.display = 'block';
+      } else {
+        $warning.style.display = 'none';
+      }
+
+    });
+
+  </script>
+</body>
+</html>
