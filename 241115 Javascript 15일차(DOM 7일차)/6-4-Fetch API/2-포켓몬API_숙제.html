@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="prev">이전</button>
+  <button id="next">다음</button>
+
+  <script>
+    const $prev = document.getElementById('prev');
+    const $next = document.getElementById('next');
+    
+    let offset = 0;
+
+    $prev.addEventListener('click', e => {
+      offset -= 20;
+      getPokemon();
+    });
+    $next.addEventListener('click', e => {
+      offset += 20;
+      getPokemon();
+    });
+
+    // 포켓몬 api 통신
+    function getPokemon() {
+      fetch(`https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=20`)
+        .then(res => res.json())
+        .then(result => {
+          console.log(result);
+        });
+    }
+    getPokemon();
+
+
+    // 요구 사항
+    // 0. 서버에 있는 이미지를 가져와서 offset수(20개) 만큼 보여줄꺼다.
+
+    // 현 상황
+    // 1. 이전 / 다음 버튼을 누르면 https://pokeapi.co/api/v2/pokemon/i .result에 -> i= 1~1302에 있는 데이터를 가져옴
+    // 2. .result에는 20개에 데이터가 있음( https://pokeapi.co/api/v2/pokemon/1 ~ 20)
+    // 3. "sprites" {"back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png" ..} 이런식으로 이미지가 담겨있음
+    
+    // 어떻게 해야할까...
+    // 각 번호의 fetch 해당하는 걸 javascript로 가져와서 flex로 show하면 될 거 같은데 
+  </script>
+</body>
+</html>
