@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>서버에서 데이터 가져오기</h1>
+  <button id="fetchData">데이터 가져오기</button>
+  <p id="output"></p>
+
+  <script>
+    const $output = document.getElementById('output');
+    const $btn = document.getElementById('fetchData');
+    $btn.addEventListener('click', e => {
+
+      // 서버와 통신 시작
+      const url = `https://jsonplaceholder.typicode.com`;
+      const resource = `/posts`; // 서버에 있는 게시물
+
+      // 서버와의 통신을 대행해주는 객체
+      const xhr = new XMLHttpRequest();
+
+      // 요청 시작
+      /*
+        서버에 데이터를 요청할 때 사용하는 4가지 요청방법
+        1. GET : 조회
+        2. POST : 생성
+        3. PUT : 수정
+        4. DELETE : 삭제
+      */
+      xhr.open('GET', `${url}${resource}`);
+
+      // 요청 보내기
+      xhr.send();
+
+      // 서버 응답 데이터 가져오기
+      xhr.addEventListener('load', e => {
+
+        if (xhr.status === 200) {
+          const response = xhr.responseText;
+          // console.log(response);
+          /*
+            서버에서 데이터를 JSON 포맷으로 응답
+            JSON 자바스크립트 x → 원활한 작동을 위해 JSON → JS로 변환 필요
+
+            JSON -> JS : JSON.parse();
+            JS -> JSON : JSON.stringify();
+          */
+          const posts = JSON.parse(responseJSON);
+          console.log(posts);
+
+          $output.textContent = responseJSON;
+        } else {
+          $output.textContent = '데이터를 가져오지 못했습니다.';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
