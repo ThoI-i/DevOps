@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>서버에서 데이터 가져오기</h1>
+  <button id="fetchData">데이터 가져오기</button>
+  <p id="output"></p>
+
+  <script>
+    const $btn = document.getElementById('fetchData');
+    $btn.addEventListener('click', e => {
+
+      // 서버와 통신 시작
+      const url = `https://jsonplaceholder.typicode.com`;
+      const resource = `/posts`; // 서버에 있는 게시물
+      // const resource = `/posts/7`; // 서버에 있는 7번 게시물 | 서버에서 설정한거임
+      // const resource = `/posts/7/comments`; // 서버에 있는 7번 게시물의 댓글 | 서버에서 설정한거임
+      // const resource = `/users`; // 서버에 있는 유저
+
+      // 서버와의 통신을 대행해주는 객체
+      const xhr = new XMLHttpRequest();
+
+      // 요청 시작
+      /*
+        서버에 데이터를 요청할 때 사용하는 4가지 요청방법
+        1. GET : 조회
+        2. POST : 생성
+        3. PUT : 수정
+        4. DELETE : 삭제
+      */
+      xhr.open('GET', `${url}${resource}`);
+
+      // 요청 보내기
+      xhr.send();
+    });
+  </script>
+</body>
+</html>

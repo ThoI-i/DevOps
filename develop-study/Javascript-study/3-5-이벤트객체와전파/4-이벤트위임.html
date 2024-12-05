@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #fruits {
+        display: flex;
+        list-style: none;
+        padding: 20px;
+        border: 2px solid red;
+        flex-wrap: wrap;
+      }
+
+      #fruits li {
+        width: 100px;
+        cursor: pointer;
+        background: orange;
+        margin-right: 10px;
+      }
+
+      .active {
+        color: red;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="fruits">
+      <li id="apple" class="active">Apple</li>
+      <li id="banana">Banana</li>
+      <li id="grape">Grape</li>
+    </ul>
+
+    <div>선택된 과일: <em class="msg">Apple</em></div>
+
+    <label>
+      # 새로운 과일 추가하기:
+      <input type="text" class="text-box" />
+      <button id="add">추가</button>
+    </label>
+
+    <script>
+      // li 요소를 클릭했을 때 이벤트 발생
+      const $fruits = document.getElementById("fruits");
+
+      $fruits.addEventListener("click", (e) => {
+        // ul 내 li 요소만 클릭 됐을 떄 이벤트가 발생시키고 싶어
+        if (!e.target.matches("#fruits li")) {
+          return;
+        } else {
+          console.log(e); // 일치 시 로그 발생
+        }
+
+        // 클릭한 태그의 텍스트를 em태그에 복사
+        const $msg = document.querySelector(".msg");
+        $msg.textContent = e.target.textContent;
+
+        // 모든 li에서 class=active제거
+        [...$fruits.child] = $fruits.forEach(($li) =>
+          $li.classList.remove("active")
+        );
+        // const $child = [...$fruits.child];
+        // for ($li of $child) {
+        //   $li.classList.remove('active');
+        // }
+        // 클릭한 태그에 class=active 부여
+        $li.classList.add("active");
+      });
+
+      // input에 새로운 과일을 입력하고 추가버튼을 누르면
+      const $addBtn = document.getElementById("add");
+      const $input = document.querySelector(".text-box");
+
+      $addBtn.addEventListener("click", (e) => {
+        // input에 입력한 과일이름 읽어오기
+        const newFruitNames = $input.value;
+        
+        // 새로운 li태그가 생성되어 ul에 추가되어야 함.
+        const $newLi = document.createElement("li");
+        $newLi.textContent = $input.value;
+        $newLi.setAttribute("id", newFruitNames.toLowerCase());
+        
+        // ul에 새 태그 추가
+        $fruits.append($newLi);
+        console.log($newLi);
+        $input.value = '';
+      });
+
+
+      $input.addEventListener('keyup', e => {
+        if(e.key === 'Enter') {
+          $addBtn.click();
+        }
+      });
+
+    </script>
+  </body>
+</html>

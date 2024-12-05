@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="90634905-35f9-406e-9ac9-949546a05886" name="Changes" comment="Intial Commit" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2p5ld8GlGsOrUGNJFhnEu97IP0D" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AnimalSound.executor": "Run",
+    "Application.AppleMain.executor": "Run",
+    "Application.ArrayBasic.executor": "Run",
+    "Application.ArrayCopy.executor": "Run",
+    "Application.ArrayDelete.executor": "Run",
+    "Application.ArrayInsert.executor": "Run",
+    "Application.ArrayPop.executor": "Run",
+    "Application.ArrayPush.executor": "Run",
+    "Application.ArrayQuiz01.executor": "Run",
+    "Application.ArrayQuiz01_ref.executor": "Run",
+    "Application.ArrayQuiz02.executor": "Run",
+    "Application.ArrayQuiz02_ref.executor": "Run",
+    "Application.ArrayQuiz03.executor": "Run",
+    "Application.ArraySearch.executor": "Run",
+    "Application.BankAccountMain.executor": "Run",
+    "Application.BankAccountMain_ref.executor": "Run",
+    "Application.CarMain.executor": "Run",
+    "Application.Casting.executor": "Run",
+    "Application.DancerMain.executor": "Run",
+    "Application.DataType.executor": "Run",
+    "Application.DateTime.executor": "Run",
+    "Application.Example.executor": "Run",
+    "Application.FinallyExample.executor": "Run",
+    "Application.ListMain.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Matrix.executor": "Run",
+    "Application.MethodBasic.executor": "Run",
+    "Application.MethodQuiz.executor": "Run",
+    "Application.MethodQuiz_ref.executor": "Debug",
+    "Application.ObjectSample (1).executor": "Run",
+    "Application.ObjectSample (2).executor": "Run",
+    "Application.ObjectSample.executor": "Run",
+    "Application.Run.executor": "Run",
+    "Application.ShapeDemo.executor": "Run",
+    "Application.StandardIO.executor": "Run",
+    "Application.StringCompare.executor": "Run",
+    "Application.StringExample.executor": "Run",
+    "Application.StudentMain.executor": "Run",
+    "Application.Test.executor": "Run",
+    "Application.TryExample1.executor": "Run",
+    "Application.TryExample2.executor": "Run",
+    "Application.TryExample3.executor": "Run",
+    "Application.VarScope.executor": "Run",
+    "Application.VehicleMain.executor": "Run",
+    "Application.WeatherApp.executor": "Run",
+    "Application.Wrapper.executor": "Run",
+    "Application.chap1_10.inter.animal.Main.executor": "Run",
+    "Application.chap1_6.Main.executor": "Run",
+    "Application.chap1_6.practice.q3.Main.executor": "Run",
+    "Application.chap1_7.inherit.player.Main.executor": "Run",
+    "Application.chap1_7.overloading.Main.executor": "Run",
+    "Application.chap1_7.practice.q1.Main.executor": "Run",
+    "Application.chap1_7.super_.Main.executor": "Run",
+    "Application.chap1_8.example.q0.method.Main.executor": "Run",
+    "Application.chap1_8.example.q0.question.Main.executor": "Run",
+    "Application.chap1_8.example.q1.ShapeDemo.executor": "Run",
+    "Application.chap1_8.poly.drive.Main.executor": "Run",
+    "Application.chap1_9.depart.Main.executor": "Run",
+    "Application.chap1_9.enum_.Main.executor": "Run",
+    "Application.chap1_9.enum_.pizza.Main.executor": "Run",
+    "Application.chap1_9.final_.Main.executor": "Run",
+    "Application.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/DevOps/By Chapter/develop-study/Java-study/src/chap1_10/practice/q6",
+    "onboarding.tips.debug.path": "C:/DevOps/By Chapter/develop-study/Java-study2/src/Main.java",
+    "settings.editor.selected.configurable": "copyright",
+    "settings.editor.splitter.proportion": "0.29124236"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="chap1_9.practice.q5" />
+      <recent name="practice.member" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\DevOps\By Chapter\develop-study\Java-study\src\chap1_10\practice\q6" />
+      <recent name="C:\DevOps\By Chapter\develop-study\Java-study\src\chap1_10\inter\phone" />
+      <recent name="C:\DevOps\By Chapter\develop-study\Java-study\src\chap1_9\enum_\pizza\beforeEnum" />
+      <recent name="C:\DevOps\By Chapter\develop-study\Java-study\src\chap1_8\example\q1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\DevOps\By Chapter\develop-study\Java-study\src\chap1_9\enum_\pizza" />
+      <recent name="C:\DevOps\By Chapter\develop-study\Java-study\src\pratice\member" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="chap1_10.inter.animal" />
+      <recent name="Chap1_4.cake" />
+      <recent name="chap1_3.OPP_Quiz" />
+      <recent name="chap1_2.function" />
+      <recent name="chap1_2.array" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ObjectSample">
+    <configuration name="DateTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap2_2.time.DateTime" />
+      <module name="Java-study2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap2_2.time.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap2_3.generic.Main" />
+      <module name="Java-study2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap2_3.generic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ObjectSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap2_2.lang.ObjectSample" />
+      <module name="Java-study2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap2_2.lang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap2_2.lang.StringExample" />
+      <module name="Java-study2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap2_2.lang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TryExample1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap2_1.exception.TryExample1" />
+      <module name="Java-study2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap2_1.exception.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ObjectSample" />
+        <item itemvalue="Application.TryExample1" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.DateTime" />
+        <item itemvalue="Application.StringExample" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90634905-35f9-406e-9ac9-949546a05886" name="Changes" comment="" />
+      <created>1732063903729</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732063903729</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Intial Commit">
+      <option name="closed" value="true" />
+      <created>1732066107378</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732066107378</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Intial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Intial Commit" />
+  </component>
+</project>

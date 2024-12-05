@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실시간 글자 크기 조정</title>
+</head>
+<body>
+
+  <input type="text" id="fontSizeInput" placeholder="글자 크기를 픽셀 단위로 입력하세요">
+  <div id="content">여기 있는 텍스트의 크기를 조정해보세요!</div>
+  <div id="warning" style="color: red; display: none;">유효하지 않은 입력입니다! 숫자를 입력해주세요.</div>
+  
+  <script>
+    // 1. input으로 입력한 숫자의 크기 만큼 글씨가 커져야함
+    // 2. 숫자가 아닌 값을 입력 시 warning이 나오게 해야함
+    const $fontSizeInput = document.getElementById('fontSizeInput');
+    const $content = document.getElementById('content');
+    const $warning = document.getElementById('warning')
+
+    $fontSizeInput.addEventListener('input', () => {
+      const fontSize = $fontSizeInput.value;
+  
+      if(isNaN(+fontSize) || fontSize === '' ){ //isNaN = Not a Number = 숫자가 아니냐? 
+        console.log('숫자 아님');
+        $warning.style.display = 'block';
+      } else {
+        console.log(`숫자 맞음`);
+        $warning.style.display = 'none';
+      }
+        $content.style.fontSize = `${fontSize}px`;
+    });
+    
+  </script>
+</body>
+</html>
+
+<!-- 1. input 입력 숫자에 따라 해당 px로 크기가 변경되어야함 -->
+<!-- 2. 숫자가 아닌 값 입력 시 display: none → 변경되어야함 -->

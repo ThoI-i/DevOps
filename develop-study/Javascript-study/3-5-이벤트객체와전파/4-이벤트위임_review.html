@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #fruits {
+        display: flex;
+        list-style: none;
+        padding: 20px;
+        border: 2px solid red;
+        flex-wrap: wrap;
+      }
+
+      #fruits li {
+        width: 100px;
+        cursor: pointer;
+        background: orange;
+        margin-right: 10px;
+      }
+
+      .active {
+        color: red;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="fruits">
+      <li id="apple" class="active">Apple</li>
+      <li id="banana">Banana</li>
+      <li id="grape">Grape</li>
+    </ul>
+
+    <div>선택된 과일: <em class="msg">Apple</em></div>
+
+    <label>
+      # 새로운 과일 추가하기:
+      <input type="text" class="text-box" />
+      <button id="add">추가</button>
+    </label>
+
+    <script>
+      const $fruits = document.getElementById("fruits");
+
+      $fruits.addEventListener("click", (e) => {
+        if (!e.target.matches("#fruits li")) {
+          return;
+        } else {
+          console.log(e);
+        }
+
+        [...$fruits.children].forEach(($li) => $li.classList.remove("active"));
+        e.target.classList.add("active");
+
+        const $msg = document.querySelector(".msg");
+        $msg.textContent = e.target.textContent;
+      });
+
+      // 추가 버튼을 누르면 input에 있는 내용으로 주황색 탭이 추가됨
+
+      const $input = document.querySelector(".text-box");
+      const $addBtn = document.getElementById("add");
+
+      $addBtn.addEventListener("click", (e) => {
+        const newContent = $input.value;
+        const $newLi = document.createElement("li");
+        $newLi.textContent = newContent;
+        $newLi.setAttribute("id", newContent.toLowerCase());
+
+        $fruits.append($newLi);
+        $input.value = "";
+      });
+
+      $addBtn.addEventListener("keyup", (e) => {
+        if (e.key === "Enter") {
+          $addBtn.click();
+        }
+      });
+    </script>
+  </body>
+</html>
