@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실시간 배경색 변경</title>
+</head>
+<body>
+
+  <input type="text" id="colorInput" placeholder="색상 이름이나 HEX 코드를 입력하세요">
+  <div id="warning" style="color: red; display: none;">유효하지 않은 색상입니다!</div>
+
+<script>
+// 1. input의 입력값에 따라 실시간으로 색상이 변하도록 이벤트 생성
+// 2. 색상이 아닌 경우 유효하지 않은 색상입니다 실행
+
+const $colorInput = document.getElementById('colorInput');
+const $warning = document.getElementById('warning');
+
+$colorInput.addEventListener('input', () =>  {
+
+  //document.body.style.background는 ""빈 문자열
+  //유효하지 않은 색상 값을 입력 시 
+  // 브라우저가 해당 값을 무시하고 기본 값("") 빈 문자열 적용
+  document.body.style.background = $colorInput.value;
+
+if (document.body.style.background !== $colorInput.value ) {
+  $warning.style.display = 'block';
+} else{
+  $warning.style.display = 'none';
+}
+});
+
+</script>
+</body>
+</html>
+
