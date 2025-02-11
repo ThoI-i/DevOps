@@ -1,4 +1,3 @@
-
 package com.study.jpa.chap05.repository;
 
 import com.querydsl.jpa.impl.JPAQueryFactory;
@@ -106,6 +105,7 @@ class QueryDslBasicTest {
                 rs.getLong("idol_id")
                 , rs.getString("idol_name")
                 , rs.getInt("age")
+                , null
                 , null
         ), "가을");
 
@@ -289,5 +289,3 @@ class QueryDslBasicTest {
             assertEquals(groupName, idol.getGroup().getGroupName());
         }
     }
-
-}
